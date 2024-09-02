@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  serverone:
+    image : 3-myfirstcompose-flask-api 
+    ports: 
+      - 2223:5000
+    tty: true
+  servertwo:
+    image : 3-myfirstcompose-flask-api 
+    ports: 
+      - 2222:5000
+    tty: true
